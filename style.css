@@ -1,18 +1,22 @@
 @font-face {
     font-family: myFirstFont;
-    src: url(pricedown\ bl.otf);
+    src: url(/fonts/pricedown\ bl.otf);
   }
 
 @font-face {
     font-family: secondFont;
-    src: url(BrushScrD.ttf);
+    src: url(/fonts/BrushScrD.ttf);
 }
 
 body, html {
     padding: 0%;
     margin: 0 auto;
-    background-color: #b28bc0;
+    background-color: white;
     height: 100%;
+}
+img {
+    width: 300px;
+    height: 300px;
 }
 
 .container {
@@ -30,7 +34,7 @@ body, html {
     text-align: center;
     font-family: secondFont;
     font-size: 40px;
-    color:;
+    color: #0266c8;
 }
 
 .header {
@@ -48,13 +52,32 @@ body, html {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap:20px;
+    justify-content: space-between;
+    align-items: center;
     font-family: secondFont;
+    margin-bottom: 20px;
 }
 
 .players {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.vs {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: myFirstFont;
+    font-size: 50px;
+    color: #f195ac;
+}
+
+.button {
+    background-color: #f195ac;
+    padding: 20px;
+    font-size: large;
+    color: white;
+    border-color: aliceblue;
+    border-radius: 8px;
+    font-family: secondFont;
 }
