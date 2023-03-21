@@ -8,7 +8,12 @@
     src: url(/fonts/BrushScrD.ttf);
 }
 
-body, html {
+@font-face {
+    font-family: thirdFont;
+    src: url(/fonts/SF\ Arborcrest\ Light.ttf);
+}
+
+body{
     padding: 0%;
     margin: 0 auto;
     background-color: white;
@@ -19,11 +24,22 @@ img {
     height: 300px;
 }
 
+.footer {
+    background-color: #0266c8;
+    padding: 20px;
+    text-align: center;
+    font-family: secondFont;
+    font-size: 20px;
+    color: white;
+}
+
 .container {
     width: 100%;
     height: 100%;
     display: flex;
+    flex:1;
     flex-direction: column;
+    margin-bottom: auto;
 }
 
 .header, .choices {
@@ -52,7 +68,8 @@ img {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap:50px;
     align-items: center;
     font-family: secondFont;
     margin-bottom: 20px;
@@ -73,11 +90,32 @@ img {
 }
 
 .button {
-    background-color: #f195ac;
-    padding: 20px;
+    background-color: #0266c8;
+    padding: 30px;
     font-size: large;
     color: white;
     border-color: aliceblue;
     border-radius: 8px;
-    font-family: secondFont;
+    font-family: thirdFont;
+}
+.user > .rock {
+    transform: translateX(-100%);
+}
+.user > .paper {
+    transform: translateX(-200%);
+}
+
+.user > .scissors {
+    transform: translateX(-310%);
+}
+
+.computer > .rock {
+    transform: translateX(300%);
+}
+.computer > .paper {
+    transform: translateX(200%);
+}
+
+.computer > .scissors {
+    transform: translateX(100%);
 }
